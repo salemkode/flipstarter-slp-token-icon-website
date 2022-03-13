@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Preload assets -->
+    <link rel="preload" href="/static/js/application.js" as="script">
+    <link rel="preload" href="/static/img/logo.png" as="image">
+    <link rel="preload" href="/static/img/clouds.png" as="image">
+    <link rel="preload" href="/static/img/grass.png" as="image">
+    <link rel="preload" href="/static/img/water.png" as="image">
+    <link rel="preload" href="/static/fonts/cairo.woff2" as="font" crossorigin="">
+    <link rel="preload" href="/static/fonts/icons.woff" as="font" crossorigin="">
+
+    <!-- preload fonts -->
+    <style>
+        /** Fonts **/
+        @font-face {
+            font-display: swap;
+            font-family: "Cairo";
+            font-style: normal;
+            font-weight: 400;
+            src: local("Cairo"), local("Cairo-Regular"),
+                url("/static/fonts/cairo.woff2") format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+                U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: "icons";
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+            src: url("/static/fonts/icons.woff") format("woff");
+        }
+    </style>
+
+    <!-- -->
+    <link rel="icon" href="/static/img/logo.png">
+    <link href="/static/css/materialize.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/github-markdown-css@5.1.0/github-markdown-light.css">
+
+    <!-- Website metadata -->
+    <title> Campaign to finance automatic tool to upload SLP tokens </title>
+    <meta property="og:title" content="Campaign to finance automatic tool to upload SLP tokens">
+    <meta property="og:description" content="Project idea summary
+  New software helps developers of tokens on the Bitcoin Cash network to easily upload icons to 
+  slp-token-icons repo for their tokens.
+  who am I
+  Salem Kode is a web developer. I worked on the development of the lbox library and the development of Flip Starter, in addition to building a new project called faststarter. I also seek to spread the Bitcoin cash culture in my surroundings.
+  Pictures from the interface of the application I am working on">
+
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_twitter_handle">
+    <meta name="twitter:title" content="Campaign to finance automatic tool to upload SLP tokens">
+    <meta name="twitter:description" content="Project idea summary
+  New software helps developers of tokens on the Bitcoin Cash network to easily upload icons to 
+  slp-token-icons repo for their tokens.
+  who am I
+  Salem Kode is a web developer. I worked on the development of the lbox library and the development of Flip Starter, in addition to building a new project called faststarter. I also seek to spread the Bitcoin cash culture in my surroundings.
+  Pictures from the interface of the application I am working on">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.flipstarter.cash/">
+    <meta property="og:article:section" content="Technology">
+    <meta property="og:article:tag" content="Bitcoin">
+    <meta property="og:article:tag" content="Bitcoin Cash">
+    <meta property="og:article:tag" content="BCH">
+    <meta property="og:article:tag" content="Cryptocurrencies">
+    <meta property="og:article:tag" content="Fundraising">
+    <meta property="og:article:tag" content="Infrastructure">
+</head>
+
+<body class="clouds">
+    <div class="grass">
+        <div class="background">
+            <!-- Site header -->
+            <header class="container row center">
+                <h1 class="cols s12 m12 l12">
+                    <span id="campaignTitle">Campaign to finance automatic tool to upload SLP tokens</span>
+                </h1>
+            </header>
+
+            <!-- Site content -->
+            <main class="container row z-depth-2">
+                <!-- Campaign -->
+                <article id="campaign" class="col s12 m12 l8" style="margin-bottom: 0.75rem;">
+                    <h1 style="display: none;">Campaign</h1>
+
+                    <!-- Campaign overview -->
+                    <section id="overview">
+                        <h2 style="display: none;">Campaign overview</h2>
+                        <div style="float: left;">
+                            <span class="valign-wrapper" style="float: left;">
+                                <i class="icon-access_time"></i>
+                                <span id="timerLabel" data-string="fullfilledLabel">Funded</span>
+                                <b id="campaignExpiration">14 days ago</b>
+                            </span>
+                        </div>
+                        <div style="float: right;">
+                            <span class="valign-wrapper" style="float: left;">
+                                <i class="icon-bookmark_border"></i>
+                                <span id="compaignContributionAmount">2.00</span>
+                                <i>/</i>
+                                <span id="campaignRequestAmount">2.00</span>
+                                <b>BCH</b>
+                            </span>
+                        </div>
+                        <div class="progress">
+                            <div class="determinate" id="campaignProgressBar" style="width: 100%;"></div>
+                            <div class="determinate" id="campaignContributionBar" style="left: 100%; width: 0.15%;">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Campaign heading -->
+                    <header id="campaignAbstract" class="markdown-body">
+                        <h3 id="project-idea-summary">Project idea summary</h3>
+                        <p>New software helps developers of tokens on the Bitcoin Cash network to easily upload icons to
+                            <a href="https://github.com/kosinusbch/slp-token-icons">slp-token-icons repo</a> for their
+                            tokens.
+                        </p>
+                        <h3 id="who-am-i">who am I</h3>
+                        <p>Salem Kode is a web developer. I worked on the development of the <a
+                                href="https://lbox.js.org">lbox</a> library and the development of <a
+                                href="https://flipstarter.cash">Flip Starter</a>, in addition to building a new project
+                            called <a href="https://github.com/faststarter">faststarter</a>. I also seek to spread the
+                            Bitcoin cash culture in my surroundings.</p>
+                        <p><sub>Pictures from the interface of the application I am working on</sub></p>
+                        <p><img alt="Ui of project"
+                                src="https://raw.githubusercontent.com/slpkode/slpkode/main/photo_2022-02-24_12-04-22.jpg">
+                        </p>
+                    </header>
+
+                    <br>
+                    <!-- Campaign donation form -->
+                    <fieldset id="donateField" class="row fullfilled">
+                        <div id="donateStatus" class="col s12 m12 l12" style="text-align: center;"
+                            data-string="statusFullfilled">The campaign has been funded.
+                            <div id="sharingActions" style="font-size: 1rem; opacity: 0.66;">
+                                <a id="fullfillmentLink" target="_blank"
+                                    href="https://blockchair.com/bitcoin-cash/transaction/bd5b2c9be3945b5762ceba2566c0b03859425623217f87e7838b665edf7ca6a8"><i
+                                        class="icon-label"></i>bd5b2c9be3945b5762ceba2566c0b03859425623217f87e7838b665edf7ca6a8</a>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Campaign details. -->
+                    <section id="campaignDetails" class="row markdown-body">
+                        <p>I know many people are having issues uploading their SLP tokens to the SLP block explorer.
+                            creating the icons in the correct formats is not only a burden on the icon creater but also
+                            the explorer have to check many details and work with them to fix issues.</p>
+                        <p><em><strong>This tool helps both sides to upload and get icons in the reviewer
+                                    easily.</strong></em></p>
+                        <h3 id="how-it-works">How it works?</h3>
+                        <p>User upload an origianl image, specify the token ID and name. Server will verify the image,
+                            resize the token and create a PR to the icons repo.</p>
+                        <p>It will improve the SLP experince for token creators and make sure the images are correctly
+                            resized to the correct denomination without much human intervention.</p>
+                        <blockquote>
+                            <p>The project will need to keep the server. After this campaign, I will buy a server for a
+                                year to ensure that this service continues to work</p>
+                        </blockquote>
+                        <p>Some parts of the project have been completed. If the campaign is funded, I will finish the
+                            project and upload it as an open source project.</p>
+                    </section>
+                </article>
+
+                <!-- Campaign sidebar -->
+                <aside class="col s12 m12 l4">
+                    <section>
+                        <h3 style="float: left;">
+                            <span class="valign-wrapper" style="float: left;">
+                                <i class="icon-face"></i>
+                                <b id="campaignRecipientCount">1</b>
+                                <span data-string="recipientsLabel">recipients</span>
+                            </span>
+                        </h3>
+                        <hr>
+                        <ul id="recipientList" class="row" style="margin-bottom: 2rem;">
+                            <li class="col s6 m6 l12">
+                                <a href="https://salemkode.com" target="_blank">
+                                    <img src="https://salemkode.com/landing-image.png" alt="salemkode">
+                                    <span>
+                                        <b>salemkode</b>
+                                        <i>2 BCH</i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 style="float: left;">
+                            <span class="valign-wrapper" style="float: left;">
+                                <i class="icon-code"></i>
+                                <span data-string="trackDelivery">Track Delivery</span>
+                            </span>
+                        </h3>
+                        <hr>
+                        <a style="display: block;margin-bottom: 2em;font-size: 1.4em;" id="track-delivery"
+                            href="https://twitter.com/salemkode">my twitter account</a>
+                    </section>
+
+                    <section>
+                        <h3 style="float: left;">
+                            <span class="valign-wrapper" style="float: left;">
+                                <i class="icon-favorite_border"></i>
+                                <b id="campaignContributorCount">4</b>
+                                <span data-string="contributorsLabel">contributors</span>
+                            </span>
+                        </h3>
+                        <hr>
+                        <ul id="contributionList">
+                            <li>
+                                <div>
+                                    <div class="contributionWaves"
+                                        style="background-position: 0px 0.54rem; animation-delay: -2.94s;"></div>
+                                    <div class="contributionDisplay"></div>
+                                    <span class="contributionPercent">87%</span>
+                                </div>
+                                <span>
+                                    <span>
+                                        <b class="contributionAlias">Kos</b>
+                                        <small class="contributionAmount">1.75 BCH</small>
+                                    </span>
+                                    <q class="contributionComment"></q>
+                                </span>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="contributionWaves"
+                                        style="background-position: 0px 3.33rem; animation-delay: -8.62s;"></div>
+                                    <div class="contributionDisplay"></div>
+                                    <span class="contributionPercent">8%</span>
+                                </div>
+                                <span>
+                                    <span>
+                                        <b class="contributionAlias">(ノಠ益ಠ)ノ彡 pɐʞɐ</b>
+                                        <small class="contributionAmount">0.15 BCH</small>
+                                    </span>
+                                    <q class="contributionComment" style="display: none;"></q>
+                                </span>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="contributionWaves"
+                                        style="background-position: 0px 3.5rem; animation-delay: -13.43s;"></div>
+                                    <div class="contributionDisplay"></div>
+                                    <span class="contributionPercent">3%</span>
+                                </div>
+                                <span>
+                                    <span>
+                                        <b class="contributionAlias">Omar</b>
+                                        <small class="contributionAmount">0.06 BCH</small>
+                                    </span>
+                                    <q class="contributionComment">Good luck Salem. Thank you for all you do for Bitcoin
+                                        Cash!</q>
+                                </span>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="contributionWaves"
+                                        style="background-position: 0px 3.53rem; animation-delay: -8.53s;"></div>
+                                    <div class="contributionDisplay"></div>
+                                    <span class="contributionPercent">2%</span>
+                                </div>
+                                <span>
+                                    <span>
+                                        <b class="contributionAlias" style="opacity: 0.37;">Anonymous</b>
+                                        <small class="contributionAmount">0.04 BCH</small>
+                                    </span>
+                                    <q class="contributionComment" style="display: none;"></q>
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+                <ul class="col s10 m10 l10 push-s1 push-m1 push-l1"
+                    style="display: flex; justify-content: center; text-align: left;">
+                    <li class="col">
+                        <a class="valign-wrapper" target="_blank" href="https://flipstarter.cash/how-to-pledge">
+                            <i class="icon-info"></i>
+                            &nbsp;
+                            <span data-string="linkHowTo">How to contribute to this campaign</span>
+                        </a>
+                    </li>
+                    <li class="col">
+                        <a class="valign-wrapper" target="_blank"
+                            href="https://read.cash/@flipstarter/flipstarter-faq-66c56b03">
+                            <i class="icon-info"></i>
+                            &nbsp;
+                            <span data-string="linkFAQ">Common questions</span>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+
+            <footer class="center">
+                <p>Powered by <a href="https://flipstarter.cash" target="_blank">Flipstarter</a></p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* Create.css */
+.clouds {
+  background-color: white;
+  background-image: url(../img/clouds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.btn-primary, .nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #2EACAB;
+  border-color: #2EACAB;
+}
+
+.btn-primary:hover {
+  background-color: #1F7F7D;
+  border-color: #1F7F7D;
+}
+
+a, .btn-link {
+  color: #2EACAB;
+}
+
+a:hover, .btn-link:hover {
+  color: #1F7F7D;
+}
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+    max-width: 922px;
+  }
+}
+
+label {
+  padding: .5rem 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.modal.show {
+  display: block;
+}
+
+/* slide fade transition*/
+.slide-fade-enter-active {
+  transition: opacity .5s;
+}
+
+.slide-fade-enter {
+  opacity: 0;
+}
+
+.slide-fade-leave-active {
+  display: none;
+}
+
+/* fade transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
